@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ny quiz</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<div class="input-group">
+    <span class="input-group-addon" id="name">Quizname</span>
+    <input type="text" class="form-control" id="quizname" placeholder="Quizname" aria-describedby="basic-addon1">
+</div><br>
+<!--<div class="input-group">-->
+    <!--<span class="input-group-addon" id="id">Quiz ID</span>-->
+    <!--<input type="text" class="form-control" id="quizid" placeholder="123" aria-describedby="basic-addon1">-->
+<!--</div><br>-->
+<div class="input-group">
+<span class="input-group-addon" id="date">Start date</span>
+<input type="text" class="form-control" id="startdate" placeholder="2017-09-20" aria-describedby="basic-addon1">
+</div><br>
+<div class="input-group">
+<span class="input-group-addon" id="time">Start time</span>
+<input type="text" class="form-control" id="starttime" placeholder="18:20:00" aria-describedby="basic-addon1">
+</div><br>
+
+<div id='question1' class='clonedInput'>
+    <p> Question: </p> <input type='text' id="qInput1" name="question1" placeholder="...question"><br>
+    Timer: <input type="text" id="time1" placeholder="10"><br>
+    <p> Insert answers and select the correct one. </p>
+    <input type='radio' class="radios" name='answer1' value="1">
+    <input type='text' id="ans11" class='aInput1' name='aInput1' placeholder="Answer 1"><br>
+    <input type='radio' class="radios" name='answer1' value="2">
+    <input type='text' id="ans12" class='aInput2' name='aInput2' placeholder="Answer 2"><br>
+    <input type='radio' class="radios" name='answer1' value="3">
+    <input type='text' id="ans13" class='aInput3' name='aInput3' placeholder="Answer 3"><br>
+    <input type='radio' class="radios" name='answer1' value="4">
+    <input type='text' id="ans14" class='aInput4' name='aInput4' placeholder="Answer 4"><br>
+    <br>
+</div><div id='question2' class='clonedInput'>
+    <p> Question: </p> <input type='text' id="qInput2" name="question1" placeholder="...question"><br>
+    Timer: <input type="text" id="time2" placeholder="10"><br>
+    <p> Insert answers and select the correct one. </p>
+    <input type='radio' class="radios" name='answer2' value="1">
+    <input type='text'  id="ans21" class='aInput1' id="1" name='aInput1' placeholder="Answer 1"><br>
+    <input type='radio' class="radios" name='answer2' value="2">
+    <input type='text' id="ans22" class='aInput2' name='aInput2' placeholder="Answer 2"><br>
+    <input type='radio' class="radios" name='answer2' value="3">
+    <input type='text' id="ans23" class='aInput3' name='aInput3' placeholder="Answer 3"><br>
+    <input type='radio' class="radios" name='answer2' value="4">
+    <input type='text' id="ans24" class='aInput4' name='aInput4' placeholder="Answer 4"><br>
+    <br>
+</div>
+
+<div>
+    <input type='button' id='addQ' value='Add question'>
+    <!--<input type='button' id='removeQ' value='Remove question'>-->
+    <br><input type='button' id='submitQuiz' value='Submit quiz'><br>
+    <label id="success"></label>
+</div>
+<br><br><br><br>
+
+
+<script src="bootstrap/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="newquiz.js"></script>
+
+</body>
+</html>

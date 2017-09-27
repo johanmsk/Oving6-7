@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play Quiz</title>
+</head>
+<body>
+
+<h2 id = "question">question</h2>
+<form id = "alternatives">
+    <input type="radio" name="question" value="1"><span id = "alt0"></span><br>
+    <input type="radio" name="question" value="2"><span id = "alt1"></span><br>
+    <input type="radio" name="question" value="3"><span id = "alt2"></span><br>
+    <input type="radio" name="question" value="4"><span id = "alt3"></span><br><br>
+    <input type="button" value="Send inn svar" id = "submit">
+</form><br>
+
+<div id="timeleft">
+    <progress value="20" max="20" id="progressBar"></progress>
+
+</div><br>
+Din score: <div id="score"></div>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="playquiz.js"></script>
+
+</body>
+</html>

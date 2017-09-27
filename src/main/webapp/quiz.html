@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Title</title>
+</head>
+<body>
+
+<table id="quizT" class="display compact">
+    <thead>
+    <tr><th>ID</th><th>Navn</th><th>Start</th></tr>
+    </thead>
+</table><br>
+
+Quiz ID:
+<input type="text" id="quizid" aria-placeholder="123"><br>
+Nick:
+<input type="text" id="nick" aria-placeholder="123">
+<button id="goToQuiz"  >Set nick og quiz</button><br>
+<form action="playquiz.html">
+    <input type="submit" value="Play Quiz" />
+</form>
+<div id="sucess"></div>
+
+
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+<script src="quiz.js"></script>
+
+</body>
+</html>
